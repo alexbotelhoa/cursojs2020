@@ -32,3 +32,8 @@ var n1 = "A3"
 console.log(typeof t1, t1);
 console.log(typeof t2, t2);
 
+
+
+
+
+
