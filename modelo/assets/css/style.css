@@ -36,6 +36,13 @@ body {
    width: 40%;
 }
 
+.container div.resultado {
+   display: block;
+   width: 100%;
+   margin-bottom: 10px;
+   text-align: center;
+}
+
 form input, form label, form button {
    display: block;
    width: 100%;
