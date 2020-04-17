@@ -7,7 +7,7 @@ function recebeEventForm (event) {
    const peso = form.querySelector('.peso');
    const altura = form.querySelector('.altura');
 
-   const imc = (peso.value / (altura.value * altura.value)).toFixed(2);
+   const imc = calcularIMC(peso, altura);
 
    let resposta;
 
@@ -27,6 +27,10 @@ function recebeEventForm (event) {
       resposta = `Informe alguma valor`;
    }
    resultado.innerHTML = `<p>${resposta}</p>`;
+}
+
+function calcularIMC(peso, altura) {
+   return (peso.value / (altura.value * altura.value)).toFixed(2);
 }
 
 form.addEventListener('submit', recebeEventForm);
