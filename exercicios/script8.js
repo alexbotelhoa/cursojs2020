@@ -15,14 +15,17 @@ console.log(ePaisagem(1024, 2048));
 // Se o número for divisível por 3 e 5, retorne = FizzBuzz;
 // Se o número NÃO for divisível po 3 e 5, retorne = O próprio número;
 // Se o número for realmente um número, retorne = O próprio número;
-// Use a função com números de 0 a 100;
+// Use a função com números randômicos de 0 a 100;
 
 function verficiaNumero(num) {
    const div3 = (num % 3) === 0 ? 'Fizz' : '';
    const div5 = (num % 5) === 0 ? 'Buzz' : '';
-   const resultado = div3 == '' && div5 == '' ? num : div3 + div5; 
-   return resultado;
+   return div3 == '' && div5 == '' ? num : div3 + div5; 
 }
 let rand = Math.floor(Math.random() * 100);
-console.log(rand);
-console.log(verficiaNumero(rand));
+
+try {
+   console.log(`O número é "${rand}" e o resultado da função é:`, verficiaNumero(rand));
+} catch(e) {
+   console.log('Bugou!!!')
+}
