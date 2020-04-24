@@ -27,14 +27,6 @@ body {
    text-align: center;
 }
 
-.relogio {
-   font-size: 3em;
-}
-
-.contando {
-   color: rgb(8, 214, 8)
-}
-
-.pausado {
-   color: red
+.ul-tasks {
+   text-align: left;
 }
